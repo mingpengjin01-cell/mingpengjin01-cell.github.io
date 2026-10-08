@@ -17,3 +17,27 @@ h1{
 p{
     font-size: 1.1rem;
 }
+
+button{
+    padding: 0.5rem 1rem;
+    border: 1px solid #0b66d6;
+    border-radius: 6px;
+    background-color:white;
+    color: #0b66d6;
+    cursor: pointer;
+}
+
+body.dark{
+    background-color: #1b1b1b;
+    color: #eee;
+}
+
+body.dark button{
+    background: #1b1b1b;
+    color: #8ab8ff;
+    border-color: #8ab8ff;
+}
+
+body.dark h1{
+    color: #8ab8ff;
+}
