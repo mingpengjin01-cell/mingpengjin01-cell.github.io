@@ -1,4 +1,4 @@
-const btn = document.getElementById("theme-btn");
+const menuBtn = document.getElementById("menu-btn");
 const menuPanel = document.getElementById("menu-panel");
 const themeBtn = document.getElementById("theme-btn");
 
@@ -20,6 +20,8 @@ themeBtn.addEventListener("click",function(){
 });
 
 //click fuera de menu: ocultar panel de menu automaticamente.
-document.addEventListener("click",function(event){
-    if(!menuPanel.classList.add("hidden"));
+document.addEventListener("click", function (event) {
+    if (!event.target.closest(".menu")) {
+        menuPanel.classList.add("hidden");
+    }
 });
