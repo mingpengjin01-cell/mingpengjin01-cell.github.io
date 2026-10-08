@@ -27,6 +27,35 @@ button{
     cursor: pointer;
 }
 
+
+/* Menu */
+.menu{
+    position:relative;
+    text-align:right;
+    margin-bottom: 1.5rem;
+}
+
+.menu-panel{
+    position: absolute;
+    right: 0;
+    top: 110%;
+    min-width: 160px;
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.menu-panel button{
+    width: 100%;
+}
+
+.hidden{
+    display:none;
+}
+
+/*Dark mode*/
 body.dark{
     background-color: #1b1b1b;
     color: #eee;
@@ -40,4 +69,9 @@ body.dark button{
 
 body.dark h1{
     color: #8ab8ff;
+}
+
+body.dark .menu-panle {
+    background: #2a2a2a;
+    border-color: #555;
 }

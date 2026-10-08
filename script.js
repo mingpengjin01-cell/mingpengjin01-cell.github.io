@@ -1,11 +1,25 @@
 const btn = document.getElementById("theme-btn");
+const menuPanel = document.getElementById("menu-panel");
+const themeBtn = document.getElementById("theme-btn");
 
-btn.addEventListener("click",function() {
+//clicl "menu": mostrar/ocultar panel de menu.
+menuBtn.addEventListener("click",function(){
+    menuPanel.classList.toggle("hidden");
+});
+
+//click en boton de modo oscuro: cambiar el tema del sitio.
+themeBtn.addEventListener("click",function(){
     document.body.classList.toggle("dark");
 
     if(document.body.classList.contains("dark")){
-        btn.textContent = "Modo claro";
+        themeBtn.textContent = "Modo claro";
+
     }else {
-        btn.textContent = "Modo oscuro";
+        themeBtn.textContent = "Modo oscuro";
     }
+});
+
+//click fuera de menu: ocultar panel de menu automaticamente.
+document.addEventListener("click",function(event){
+    if(!menuPanel.classList.add("hidden"));
 });
